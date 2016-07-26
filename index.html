@@ -1,0 +1,125 @@
+<html ng-app="typewrite">
+  <head>
+    <meta charset="UTF-8">
+    <title>Joseph Nolan</title>
+    <link rel='stylesheet prefetch' href='https://cdn.rawgit.com/Dogfalo/materialize/master/dist/css/materialize.min.css'>
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+  <body ng-controller="typingController">
+    <div class="intro lighten-2 z-depth-1">
+      <h1 class="grey-text text-lighten-5">Joseph Nolan</h1>
+      <h5 class="grey lighten-4 grey-text text-darken-1">{{view.type}}</h5>
+    </div>
+    <div class="container about">
+      <h5>ABOUT ME</h5>
+      <h6>Let me introduce myself</h6>
+      <hr>
+      <div class="row">
+        <div class="col s12 m4 l4">
+          <h6>Story</h6>
+          <p> Much like many people have done in this generation, I floated around a bit in my 20s. I went from being a musician, to working as a quality engineer, then landed as an accountant for some time. There was something during that time that was missing that I had as a working musician, the ability to create something from a skill set I had acquired.</p>
+          <p> I have always been intrigued by technology but had a very limited experience with html and css from the Myspace days. I was introduced (by my wonderful wife) to Web Development bootcamps after spending some time going back to college for Computer Science. I was already hooked with coding, but web development has allowed me to take what knowledge I had been gaining and apply it more practically. </p>
+          <p> I'm very excited about my future in this field and the field itself. The pace it is growing at is astonishing and I happy to keep growing along with it. </p>
+        </div>
+
+        <div class="col s12 m4 l4">
+
+        </div>
+
+        <div class="col s12 m4 l4">
+          <h6>Social Media</h6>
+          <div class="card blue-grey darken-1">
+            <div class="card-content white-text">
+
+              <img src="https://en.gravatar.com/userimage/103522603/d69a32315d4401731baa170d7b3e2996.jpg"
+                   onmouseover="this.src='https://en.gravatar.com/userimage/103522603/1cae09f05b8c1a9cab153dace5fd7c4a.jpg'"
+                   onmouseout="this.src='https://en.gravatar.com/userimage/103522603/d69a32315d4401731baa170d7b3e2996.jpg'"
+                   width="64" height="64">
+
+            </div>
+            <div class="card-action space-between">
+              <a href="https://github.com/JoSmoBN"><i c<i class="fa fa-github-square fa-4x" aria-hidden="true"></i></a>
+              <a href="https://twitter.com/JosephBNolan"><i class="fa fa-twitter-square fa-4x" aria-hidden="true"></i></a>
+              <a href="https://www.linkedin.com/in/josephbnolan"><i class="fa fa-linkedin-square fa-4x" aria-hidden="true"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container portfolio">
+      <h5>Portfolio</h5>
+      <h6>My Latest Projects</h6>
+      <hr>
+      <div class="row">
+        <div class="col s12 m12 l12 portfolio-holder">
+
+          <img class="materialboxed" src="/assets/snip20160725_5.png">
+          <img class="materialboxed" src="/assets/Bracket.png">
+          <img class="materialboxed" src="/assets/CoffeeCards.png">
+
+        </div>
+      </div>
+        <div class="col s12 m4 l4">
+          <h6>Project description</h6>
+          <ul class="collapsible">
+            <li class="active">
+              <div class="collapsible-header"><i class="mdi-av-web"></i>Blueprints</div>
+              <div class="collapsible-body"><p> Contributed to the Blueprints project at Dev Mountain. Blueprints is a planning tool for the students before they get down to coding their projects. Blueprint's technologies include React, ImmutableJS, Redux, Stylus and Webpack for the build. Check it out <a href="http://blueprints.devmounta.in/">  here.</a> </p></div>
+            </li>
+            <li>
+              <div class="collapsible-header"><i class="mdi-image-color-lens"></i>Bracket Breaker</div>
+              <div class="collapsible-body"><p> A new take on the bracket system. Instead of the traditional bracket layout, this application uses cards. The flow of the tournament is carried by the familiar tab system. This project used Angular, Node, Express and MongoDB (Mongoose). Get a tournament going <a href="https://infinite-oasis-65011.herokuapp.com/#/"> here. </a> </p></div>
+            </li>
+            <li>
+              <div class="collapsible-header"><i class="mdi-hardware-gamepad"></i> Coffee Cards </div>
+              <div class="collapsible-body"><p> A simple app that allows you to track different coffees you've tried and their tasting notes. Still in the works but planning on implementing a brew recipe system as well. </p></div>
+            </li>
+          </ul>
+        </div>
+    </div>
+    <div class="container contact">
+      <h5>Conact</h5>
+      <h6>Get in touch with me</h6>
+      <hr>
+      <div class="row">
+        <div class="col s12 m6 l6">
+          <div class="row">
+            <form class="col s12" method="post" action="https://formspree.io/josephbnolan@me.com">
+              <div class="row">
+                <div class="input-field col s6">
+                  <input name="first_name" id="first_name" type="text" class="validate" required>
+                  <label for="first_name">First Name</label>
+                </div>
+                <div class="input-field col s6">
+                  <input name="last_name" id="last_name" type="text" class="validate" required>
+                  <label for="last_name">Last Name</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s12">
+                  <input name="email" id="email" type="email" class="validate" required>
+                  <label for="email">E-Mail</label>
+                </div>
+              </div>
+              <textarea name="message" class="materialize-textarea" placeholder="Your Message" required></textarea>
+              <button class="btn waves-effect waves-light" type="submit" name="action">Submit<i class="mdi-content-send right"></i></button>
+            </form>
+          </div>
+        </div>
+        <div class="col s12 m6 l6 contact-holder">
+          <h6 class="mdi-communication-phone">Phone</h6>
+          <p> 214-755-4153</p>
+          <h6 class="mdi-communication-email">Email</h6>
+          <p>JosephBNolan@me.com</p>
+        </div>
+      </div>
+    </div>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.js"></script>
+    <script src='https://cdn.rawgit.com/Dogfalo/materialize/master/dist/js/materialize.min.js'></script>
+    <script src="https://use.fontawesome.com/c9e806148f.js"></script>
+
+    <script src="/public/app.js"></script>
+  </body>
+</html>
+.
